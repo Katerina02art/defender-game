@@ -1,8 +1,10 @@
 {
   "name": "defender-game",
   "version": "1.0.0",
-  "description": "��B\u0000r\u0000o\u0000w\u0000s\u0000e\u0000r\u0000 \u0000b\u0000a\u0000s\u0000e\u0000d\u0000 \u0000g\u0000a\u0000m\u0000e\u0000\r\u0000 \u0000",
-  "keywords": [],
+  "description": "Browser based game",
+  "keywords": [
+    "game"
+  ],
   "homepage": "https://github.com/Katerina02art/defender-game#readme",
   "bugs": {
     "url": "https://github.com/Katerina02art/defender-game/issues"
@@ -16,6 +18,19 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^8.57.1",
+    "globals": "^17.4.0"
+  },
+  "dependencies": {
+    "core-js": "^3.48.0"
   }
 }
